@@ -1,0 +1,112 @@
+<div ng-include="'tpl/header.html'"></div>
+
+<div class="container"  id="skill">
+	<div class="row">
+<div class="col-sm-12">
+		<div class="panel panel-info">
+			<div class="panel-heading">
+	<svg  height="50px" width="100%" xmlns="http://www.w3.org/2000/svg">
+  <text id="wenben" x="20" y="40" stroke-width="1" stroke="#e4393c" fill="none" font-size="36px">Zhao LongFei's Skills</text>
+</svg> 
+			</div>
+			<div class="panel-body">
+				
+	<div class="row">
+    	<div class="col-sm-3 "><div class="bg-primary skill1 text-center"><img src="img/eclipse.png" class="img-circle"/><div class="bg-danger skill6">
+    	<span class="text-danger h3">模拟安卓运行环境</span>	
+    	</div></div></div>
+    	<div class="col-sm-3 "><div class=" bg-info skill1 text-center">
+    		<img src="img/jquery.png" alt="" class="img-circle"/><div class="bg-danger skill9">
+    	<span class="text-primary h3">DOM操作的利器</span>	
+    	</div>
+    	</div></div>
+    	<div class="col-sm-3 "><div class="bg-danger skill1 text-center">
+    		<img src="img/mysql.jpg" alt="" class="img-circle"/><div class="bg-danger skill9">
+    	<span class="text-warning h3">最广泛的数据存储</span>
+    	</div>
+    	</div></div>
+    	<div class="col-sm-3 "><div class="bg-success skill1 text-center">
+    		<img src="img/ng.jpg" class="img-circle"/><div class="bg-danger skill5">
+    <span class="text-success h3">强大的交互框架</span>
+    	</div>
+    	</div></div>
+    	
+    </div>
+    
+    
+    <div class="row">
+    	<div class="col-sm-3 "><div class="bg-info skill1 text-center">
+    		<img src="img/ajax.png" class="img-circle" alt="" /><div class="bg-danger skill7">
+    	<span class="text-primary h3">即时交互的新篇章</span>
+    	</div>
+    	</div></div>
+    	<div class="col-sm-3 "><div class="bg-danger skill1 text-center">
+    		<img src="img/bootstrap.jpg" class="img-circle" alt="" /><div class="bg-danger skill4">
+    	<span class="text-warning h3">前端响应式框架</span>
+    	</div>
+    	</div></div>
+    	<div class="col-sm-3 "><div class="bg-success skill1 text-center"><img src="img/nodejs.png"class="img-circle" alt="" /><div class="bg-danger skill7">
+    	<span class="text-success h3">轻量web端应用</span>	
+    	</div></div></div>
+    	<div class="col-sm-3 "><div class="bg-warning skill1 text-center">
+    		<img src="img/html5.jpg"class="img-circle" alt="" /><div class="bg-danger skill4"><div id="allmap"></div>
+<script type="text/javascript">
+	var map = new BMap.Map("allmap");
+	var point = new BMap.Point(118.778783,32.011574);
+	map.centerAndZoom(point, 15);
+	var pt = new BMap.Point(118.778783,32.011574);
+	var myIcon = new BMap.Icon("http://developer.baidu.com/map/jsdemo/img/fox.gif", new BMap.Size(300,157));
+	var marker = new BMap.Marker(pt,{icon:myIcon});  // 创建标注
+	map.addOverlay(marker);              // 将标注添加到地图中             // 将标注添加到地图中
+	map.centerAndZoom(point, 15);
+	var opts = {
+	  width : 20,     // 信息窗口宽度
+	  height: 5,     // 信息窗口高度
+	  title : "I am here 雨花台区雨花西路92号" , // 信息窗口标题
+	  enableMessage:true,//设置允许信息窗发送短息
+	  message:"http://www.baidu.com"
+	}
+	var infoWindow = new BMap.InfoWindow("雨花台区雨花西路92号", opts);  // 创建信息窗口对象 
+	marker.addEventListener("click", function(){          
+		map.openInfoWindow(infoWindow,point); //开启信息窗口
+	});
+</script>	
+    	</div>
+    	</div></div>
+    </div>
+    
+    <div class="row">
+    	<div class="col-sm-3 "><div class="bg-danger skill1 text-center">
+    		<img src="img/reactjs.jpg" class="img-circle" alt="" /><div class="bg-danger skill8">
+    	<span class="text-warning h3">简短有力的library</span>
+    	</div>
+    	</div></div>
+    	<div class="col-sm-3 "><div class="bg-success skill1 text-center">
+    		<img src="img/mysql.jpg" class="img-circle"alt="" /><div class="bg-danger skill3">
+    	<span class="text-success h3">最广泛的数据存储</span>	
+    	</div>
+    	</div></div>
+    	<div class="col-sm-3 "><div class="bg-warning skill1 text-center"><img src="img/php.png" class="img-circle"alt="" /><div class="bg-danger skill3">
+    	<span class="text-info h3">连接JS和数据库的媒介</span>
+    	</div></div></div>
+    	<div class="col-sm-3 "><div class="bg-primary skill1 text-center">
+    		<img src="img/ionic.jpg" class="img-circle"alt="" /><div class="bg-danger skill2">
+    	<span class="text-danger h3">强大的app开发框架</span>	
+    	</div>
+    	</div></div>
+    </div>
+				
+			</div>
+			
+			
+			
+		</div>
+		
+		
+		
+	</div></div>
+	
+	
+	
+ 
+</div>
